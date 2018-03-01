@@ -1,0 +1,208 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+/* sidebar*/
+.sidenav {
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background: lightgray;
+    overflow-x: hidden;
+    padding: 8px 0;
+    height:100%;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.mini_cal {
+    width: 215px;
+    position: fixed;
+    z-index: 1;
+    top: 500px;
+    left: 3px;
+    background: lightgray;
+    overflow-x: hidden;
+    padding: 8px 0;
+    height: 100%;
+}
+.month {
+    /*position: fixed;*/
+    padding: 5px 10px;
+    width: 89%;
+    /*left: 3px;*/
+    background: #1abc9c;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    /*top: 400px;*/
+
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /*top: 450px;*/
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    /*position: fixed;*/
+    margin: 3px;
+    padding: 8px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    /*position: fixed;*/
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+}
+
+.days{
+    margin:3px;
+}
+.processed_days {
+    width:92%;
+    columns:7;
+    /*list-style-position: inside;*/
+    text-align: center;
+}
+.processed_days li{
+    display: table-row;
+    width: 93%;
+    /*color: green;*/
+    /*list-style-position: inside;*/
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+/*.not_this_month{*/
+    /*color:#1abc9c;*/
+/*}*/
+.circle{
+    display: block;
+    width: 20px;
+    height:20px;
+    border-radius: 10px;
+    margin: 3px 0px;
+    background-color: #dddddd;
+}
+.circle.red{
+    background-color : red;
+    color:white;
+}
+.circle.out{
+    background-color:#1abc9c;
+    color:white;
+}
+.next{
+    cursor:pointer;
+}
+.prev{
+    cursor: pointer;
+}
+
+/*.processed_days{*/
+    /*margin:0;*/
+    /*padding:0;*/
+/*}*/
+/*.processed_days li{*/
+    /*float:left;*/
+    /*margin-bottom:10px;*/
+/*}*/
+/*.processed_days li div{*/
+    /*width:12%;*/
+/*}*/
+/*main*/
+#main {
+    top: 0px;
+    margin-left: 215px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    /*padding: 0px 100px;*/
+}
+

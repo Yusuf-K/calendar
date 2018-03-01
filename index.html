@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Calendar</title>
+    <link type="text/css" rel="stylesheet" href="/sources/css/style.css/">
+    <script src="sources/js/main.js"></script>
+</head>
+<body>
+<!-- Side navigation -->
+<div class="sidenav">
+    <a href="#">Calendar 1</a>
+    <a href="#">Calendar 2</a>
+    <a href="#">Calendar 3</a>
+    <a href="#">Calendar 4</a>
+    <div class="mini_cal">
+        <div class="month">
+            <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li class="current_month">
+                    <script src="/sources/js/Month.js">
+                    </script><br>
+                </li>
+            </ul>
+        </div>
+        <div class="weekdays">
+            <ul>
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+            </ul>
+        </div>
+        <div class="days">
+            <ul class="processed_days">
+                <script src="/sources/js/days.js"></script>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header">
+
+</div>
+<!-- Page content -->
+<div id="main">
+    Calendar here
+</div>
+</body>
+</html>

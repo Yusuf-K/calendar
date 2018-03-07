@@ -87,12 +87,11 @@ body {
     width: 215px;
     position: fixed;
     z-index: 1;
-    top: 500px;
     left: 3px;
     background: lightgray;
     overflow-x: hidden;
     padding: 8px 0;
-    height: 100%;
+    bottom:0px;
 }
 .month {
     /*position: fixed;*/
@@ -170,15 +169,18 @@ body {
     height:20px;
     border-radius: 10px;
     margin: 3px 0px;
-    background-color: #dddddd;
+    /*background-color: #dddddd;*/
+    background-color: lightgray;
 }
 .circle.red{
     background-color : red;
     color:white;
 }
 .circle.out{
-    background-color:#1abc9c;
-    color:white;
+    /*background-color:#1abc9c;*/
+    background-color: lightgray;
+    /*color:white;*/
+    color: gray;
 }
 .next{
     cursor:pointer;

@@ -62,7 +62,7 @@ body {
     top: 0px;
     left: 0px;
     background: lightgray;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     padding: 8px 0;
     height:100%;
 }
@@ -187,6 +187,30 @@ body {
 }
 .prev{
     cursor: pointer;
+}
+.accounts{
+    color:gray;
+    font-size: 10pt;
+    padding: 3px;
+    left:5px;
+    overflow: hidden;
+    width : 219px;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.calendars li{
+    padding:2px;
+    overflow: hidden;
+    width : 219px;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.calendars_list{
+    overflow-y:auto;
+    max-height:495px;
+    height:100% !important;
 }
 
 /*.processed_days{*/

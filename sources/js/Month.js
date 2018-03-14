@@ -27,5 +27,7 @@ function getCurrentMonth (current_month, current_year){
     //     current_year -= 1;
     // };
     current_month = month[current_month];
-    document.getElementsByClassName("current_month")[0].innerHTML = current_month + '<br>' + current_year;
+    var month_year = [current_month, current_year];
+    return month_year;
+    // document.getElementsByClassName("current_month")[0].innerHTML = current_month + '<br>' + current_year;
 }

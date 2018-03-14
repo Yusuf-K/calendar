@@ -61,6 +61,6 @@ function getCurrentDays (current_month, current_year) {
         }
     }
 
-
-  document.getElementsByClassName("processed_days")[0].innerHTML = new_days.join(' ');
+    return new_days.join(' ');
+  // document.getElementsByClassName("processed_days")[0].innerHTML = new_days.join(' ');
 }

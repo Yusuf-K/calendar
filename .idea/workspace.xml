@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09024e72-e469-442c-be83-f5d54a100e3b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/sources/css/style.css" afterPath="$PROJECT_DIR$/sources/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/sources/js/createYearView.js" afterPath="$PROJECT_DIR$/sources/js/createYearView.js" />
-      <change beforePath="$PROJECT_DIR$/sources/js/days.js" afterPath="$PROJECT_DIR$/sources/js/days.js" />
-      <change beforePath="$PROJECT_DIR$/sources/js/main.js" afterPath="$PROJECT_DIR$/sources/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,10 +31,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sources/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="343" column="18" lean-forward="false" selection-start-line="343" selection-start-column="18" selection-end-line="343" selection-end-column="18" />
+            <state relative-caret-position="430">
+              <caret line="352" column="1" lean-forward="true" selection-start-line="352" selection-start-column="1" selection-end-line="352" selection-end-column="1" />
               <folding>
-                <marker date="1521541885695" expanded="true" signature="2917:2935" ph="..." />
+                <marker date="1521542192450" expanded="true" signature="2917:2935" ph="..." />
               </folding>
             </state>
           </provider>
@@ -59,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/sources/js/createYearView.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="258" lean-forward="true" selection-start-line="9" selection-start-column="258" selection-end-line="9" selection-end-column="273" />
+              <caret line="9" column="258" lean-forward="false" selection-start-line="9" selection-start-column="258" selection-end-line="9" selection-end-column="273" />
               <folding />
             </state>
           </provider>
@@ -356,12 +351,12 @@
       <workItem from="1520324253981" duration="14176000" />
       <workItem from="1520928872037" duration="26686000" />
       <workItem from="1521042289138" duration="10887000" />
-      <workItem from="1521528900490" duration="8565000" />
+      <workItem from="1521528900490" duration="8854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103386000" />
+    <option name="totallyTimeSpent" value="103675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="834" extended-state="0" />
@@ -476,7 +471,7 @@
         <state relative-caret-position="4680">
           <caret line="312" column="20" lean-forward="false" selection-start-line="312" selection-start-column="20" selection-end-line="312" selection-end-column="20" />
           <folding>
-            <marker date="1521541885695" expanded="true" signature="2917:2935" ph="..." />
+            <marker date="1521542192450" expanded="true" signature="2917:2935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -498,7 +493,7 @@
         <state relative-caret-position="4650">
           <caret line="310" column="1" lean-forward="false" selection-start-line="310" selection-start-column="1" selection-end-line="310" selection-end-column="1" />
           <folding>
-            <marker date="1521541885695" expanded="true" signature="2917:2935" ph="..." />
+            <marker date="1521542192450" expanded="true" signature="2917:2935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -570,7 +565,7 @@
         <state relative-caret-position="2730">
           <caret line="182" column="15" lean-forward="true" selection-start-line="182" selection-start-column="15" selection-end-line="182" selection-end-column="15" />
           <folding>
-            <marker date="1521541885695" expanded="true" signature="2917:2935" ph="..." />
+            <marker date="1521542192450" expanded="true" signature="2917:2935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -626,7 +621,7 @@
         <state relative-caret-position="1470">
           <caret line="98" column="22" lean-forward="true" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
           <folding>
-            <marker date="1521541885695" expanded="true" signature="2917:2935" ph="..." />
+            <marker date="1521542192450" expanded="true" signature="2917:2935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -672,7 +667,7 @@
         <state relative-caret-position="1335">
           <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
           <folding>
-            <marker date="1521541885695" expanded="true" signature="2917:2935" ph="..." />
+            <marker date="1521542192450" expanded="true" signature="2917:2935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -710,7 +705,7 @@
     <entry file="file://$PROJECT_DIR$/sources/js/createYearView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="258" lean-forward="true" selection-start-line="9" selection-start-column="258" selection-end-line="9" selection-end-column="273" />
+          <caret line="9" column="258" lean-forward="false" selection-start-line="9" selection-start-column="258" selection-end-line="9" selection-end-column="273" />
           <folding />
         </state>
       </provider>
@@ -771,10 +766,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="343" column="18" lean-forward="false" selection-start-line="343" selection-start-column="18" selection-end-line="343" selection-end-column="18" />
+        <state relative-caret-position="430">
+          <caret line="352" column="1" lean-forward="true" selection-start-line="352" selection-start-column="1" selection-end-line="352" selection-end-column="1" />
           <folding>
-            <marker date="1521541885695" expanded="true" signature="2917:2935" ph="..." />
+            <marker date="1521542192450" expanded="true" signature="2917:2935" ph="..." />
           </folding>
         </state>
       </provider>

@@ -61,44 +61,41 @@ body {
     z-index: 1;
     top: 25px;
     left: 0px;
-    background: lightgray;
+    /*background: lightgray;*/
     /*overflow-x: hidden;*/
     padding: 8px 0;
     height:100%;
+    background-blend-mode: overlay, normal;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    linear-gradient(rgba(230, 230, 230, 0.3), rgba(230, 230, 230, 0.3));
+    box-shadow: 1px 0 1px 0 rgba(74, 74, 74, 0.24);
+}
+.bound{
+    height: 1px;
+    background-color: #d8d8d8;
 }
 
-/*.sidenav a {*/
-    /*padding: 6px 8px 6px 16px;*/
-    /*text-decoration: none;*/
-    /*font-size: 15px;*/
-    /*color: #2196F3;*/
-    /*display: block;*/
-/*}*/
 
-/*.sidenav a:hover {*/
-    /*color: #064579;*/
+/*@media screen and (max-height: 450px) {*/
+    /*.sidenav {padding-top: 15px;}*/
+    /*.sidenav a {font-size: 18px;}*/
 /*}*/
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 .mini_cal {
-    width: 215px;
+    width: 219px;
     position: fixed;
     z-index: 1;
-    left: 3px;
-    background: lightgray;
+    /*left: 3px;*/
+    /*background: lightgray;*/
     overflow-x: hidden;
-    padding: 8px 0;
+    /*padding: 2px 0;*/
     bottom:0px;
 }
 .month {
     /*position: fixed;*/
     padding: 5px 10px;
-    width: 89%;
+    /*width: 89%;*/
     /*left: 3px;*/
-    background: #1abc9c;
+    /*background: #1abc9c;*/
     text-align: center;
 }
 
@@ -110,67 +107,81 @@ body {
 }
 
 .month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    /*top: 450px;*/
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    color: #252624;
 }
 
 .month .prev {
     float: left;
     padding-top: 10px;
+    color: #252624;
 }
 
 .month .next {
     float: right;
     padding-top: 10px;
+    color: #252624;
+}
+.weekdays_table{
+    width:100%;
+    text-align:center;
+}
+.weekdays_table th, td {
+    padding: 1px 5px;
+}
+.weekdays_table th{
+
 }
 
-.weekdays {
-    /*position: fixed;*/
-    margin: 3px;
-    padding: 8px 0;
-    background-color: #ddd;
+.weekdays{
+    display: block;
+    width: 20px;
+    height:20px;
+    border-radius: 10px;
+    margin: 3px 0px;
+    /*line-height: 20px;*/
+    /*font-size:14px;*/
+    opacity: 0.59;
+    font-family: HelveticaNeue;
+    font-size: 8px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #949494;
+    /*background-color: #dddddd;*/
+    /*background-color: lightgray;*/
 }
 
-.weekdays li {
-    /*position: fixed;*/
-    display: inline-block;
-    width: 12%;
-    color: #666;
-    text-align: center;
-}
 
-.days{
-    margin:3px;
-}
-.processed_days {
-    width:92%;
-    columns:7;
-    /*list-style-position: inside;*/
-    text-align: center;
-}
-.processed_days li{
-    display: table-row;
-    width: 93%;
-    /*color: green;*/
-    /*list-style-position: inside;*/
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-}
-/*.not_this_month{*/
-    /*color:#1abc9c;*/
-/*}*/
 .circle{
     display: block;
     width: 20px;
     height:20px;
     border-radius: 10px;
     margin: 3px 0px;
+    /*line-height: 20px;*/
     /*background-color: #dddddd;*/
-    background-color: lightgray;
+    /*background-color: lightgray;*/
+    font-size: 12px;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.83;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: #717171;
+
 }
 .circle.red{
     background-color : red;
@@ -178,9 +189,9 @@ body {
 }
 .circle.out{
     /*background-color:#1abc9c;*/
-    background-color: lightgray;
-    /*color:white;*/
-    color: gray;
+    /*background-color: lightgray;*/
+    color: #cdcdcd;
+
 }
 .next{
     cursor:pointer;
@@ -190,7 +201,7 @@ body {
 }
 .accounts{
     color:gray;
-    font-size: 10pt;
+    /*font-size: 10pt;*/
     padding: 3px;
     left:5px;
     overflow: hidden;
@@ -198,6 +209,15 @@ body {
     display:inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: SFUIText;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #575757;
 }
 .calendars li{
     padding:2px;
@@ -206,16 +226,25 @@ body {
     display:inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: SFUIText;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #575757;
 }
 .calendars_list{
     overflow-y:auto;
-    max-height:495px;
+    max-height:500px;
     height:100% !important;
 }
-.header{
+.topbar{
     width:100%;
     height: 25px;
-    background:linear-gradient(#E2E0E2,#C8C5C8);
+    background:linear-gradient(to bottom, #e7e6e7, #d1d0d1);
     position:fixed;
     top:0;
 }
@@ -227,8 +256,16 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    /*font-size: 12px;*/
     cursor: pointer;
+    font-family: SFUIText;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #262626;
 }
 .hide_cal_button{
     margin: 3px 10px;
@@ -241,7 +278,7 @@ body {
     top:3px;
     left:50%;
 }
-.header input[type=text] {
+.topbar input[type=text] {
     top:3px;
     float: right;
     /*padding: 6px;*/
@@ -249,12 +286,30 @@ body {
     margin-top: 3px;
     margin-right: 16px;
     font-size: 12px;
+    width: 140px;
+    /*height: 22px;*/
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #fefefe, #f1f1f1);
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 0.5px rgba(0, 0, 0, 0.1);
+}
 }
 .content_head{
     top:25px;
-    height:55px;
+    /*height:94px;*/
+    height: 85px;
     /*position:fixed;*/
     /*top:15px;*/
+    /*width: 66px;*/
+    /*height: 32px;*/
+    font-family: HelveticaNeue;
+    font-size: 26px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    /*text-align: center;*/
+    color: #1d2022;
 }
 .content_buttons{
     /*top:25pt;*/
@@ -280,52 +335,53 @@ body {
 }
 .view{
     margin-left:225px;
+    height:667px;
+    /*overflow: hidden;*/
 }
 .year_view{
     display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap:70px;
+    grid-column-gap: 30px;
+    grid-row-gap:8px;
     /*grid-template-columns: 250px 250px 250px 250px ;*/
     grid-template-columns: auto auto auto auto;
+    grid-template-rows: 19px 191px 19px 191px 19px 191px;
+    /*grid-template-columns: auto auto auto;*/
     /*background-color: #2196F3;*/
-    padding: 5px;
-    margin:33px 3px;
+    /*padding: 5px;*/
+    /*margin:33px 3px;*/
+    margin: 0px 3px;
 }
-/*.year_view .processed_days{*/
-    /**/
-    /*!*width:75%;*!*/
-/*}*/
-.year_view .processed_days .circle{
+.year_view .weekdays_table th, td{
+    padding: 0px 5px;
+}
+
+.year_view .weekdays_table .circle{
     background-color: white;
 }
-.year_view .processed_days .circle.red{
+.year_view .weekdays_table .circle.red{
     background-color : red;
     color:white;
 }
+
 .month_in_year {
-    /*background-color: rgba(255, 255, 255, 0.8);*/
+    /*background-color: rgba(255, 255, 255, 0.8);*!*/
     border: 1px hidden rgba(0, 0, 0, 0.8);
     padding: 10px;
     /*font-size: 30px;*/
     text-align: center;
+
 }
 
-/*.processed_days{*/
-    /*margin:0;*/
-    /*padding:0;*/
-/*}*/
-/*.processed_days li{*/
-    /*float:left;*/
-    /*margin-bottom:10px;*/
-/*}*/
-/*.processed_days li div{*/
-    /*width:12%;*/
-/*}*/
-/*main*/
-/*#main {*/
-    /*top: 0px;*/
-    /*margin-left: 215px; !* Same width as the sidebar + left position in px *!*/
-    /*font-size: 28px; !* Increased text to enable scrolling *!*/
-    /*!*padding: 0px 100px;*!*/
-/*}*/
-
+.year_view_month{
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #e30613;
+    text-transform: lowercase;
+    padding-left: 5px;
+}

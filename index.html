@@ -45,6 +45,8 @@
         </div>
 
     </div>
+    <div class="bound">
+    </div>
     <div class="mini_cal">
         <div class="month">
             <ul>
@@ -56,26 +58,15 @@
                 </li>
             </ul>
         </div>
-        <div class="weekdays">
-            <ul>
-            <li>Mo</li>
-            <li>Tu</li>
-            <li>We</li>
-            <li>Th</li>
-            <li>Fr</li>
-            <li>Sa</li>
-            <li>Su</li>
-            </ul>
-        </div>
         <div class="days">
-            <ul class="processed_days">
+            <table class="weekdays_table">
                 <script src="/sources/js/days.js"></script>
-            </ul>
+            </table>
         </div>
     </div>
 </div>
 <!--Header-->
-<div class="header">
+<div class="topbar">
     <button value="Calendars" class="button sidebar_button hide_cal_button">Calendars</button>
     <button value="+" class="button sidebar_button add_button">+</button>
     <div class="choose_view_buttons">
@@ -101,9 +92,7 @@
     <script src="/sources/js/createYearView.js">
     </script>
 </div>
-<div id="main">
-    Calendar here
-</div>
+
 
 </body>
 </html>

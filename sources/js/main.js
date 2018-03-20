@@ -6,7 +6,7 @@ window.onload = function () {
      var new_days = getCurrentDays (current_month, current_year);
      getCurrentViewDate(current_view, current_year,current_month);
      document.getElementsByClassName("current_month")[0].innerHTML = month_year[0] + '<br>' + month_year[1];
-     document.getElementsByClassName("processed_days")[0].innerHTML = new_days;
+     document.getElementsByClassName("weekdays_table")[0].innerHTML = new_days;
      if (current_view === 'year')
      {
          createYearView(current_year);
@@ -24,7 +24,7 @@ window.onload = function () {
          var month_year = getCurrentMonth (current_month, current_year);
          var new_days = getCurrentDays (current_month, current_year);
          document.getElementsByClassName("current_month")[0].innerHTML = month_year[0] + '<br>' + month_year[1];
-         document.getElementsByClassName("processed_days")[0].innerHTML = new_days;
+         document.getElementsByClassName("weekdays_table")[0].innerHTML = new_days;
      };
      document.getElementsByClassName("next")[0].onclick = function() {
         current_month+=1;
@@ -39,7 +39,7 @@ window.onload = function () {
          var month_year = getCurrentMonth (current_month, current_year);
          var new_days = getCurrentDays (current_month, current_year);
          document.getElementsByClassName("current_month")[0].innerHTML = month_year[0] + '<br>' + month_year[1];
-         document.getElementsByClassName("processed_days")[0].innerHTML = new_days;
+         document.getElementsByClassName("weekdays_table")[0].innerHTML = new_days;
     };
     document.getElementsByClassName("view_prev")[0].onclick = function() {
         if (current_view === 'year'){

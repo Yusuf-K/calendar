@@ -55,5 +55,6 @@ window.onload = function () {
         getCurrentViewDate(current_view, current_year,current_month);
         createYearView(current_year);
     };
+
 };
 
